@@ -31,7 +31,7 @@ class ListFragment : Fragment() {
 
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(requireActivity())
-
+//ssss
         mToDoViewModel.getAllData.observe(viewLifecycleOwner, Observer { data ->
             println(data)
             adapter.setData(data)
