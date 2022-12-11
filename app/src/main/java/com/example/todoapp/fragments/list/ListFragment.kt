@@ -47,7 +47,7 @@ class ListFragment : Fragment() {
         list.setOnClickListener{
             findNavController().navigate(R.id.action_listFragment_to_updateFragment)
         }
-
+//test
         setHasOptionsMenu(true)
         return binding.root
     }
