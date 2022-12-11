@@ -1,0 +1,17 @@
+Index: app/src/main/java/com/example/todoapp/fragments/add/AddFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.todoapp.fragments.add\n\nimport android.os.Bundle\nimport android.view.*\nimport androidx.fragment.app.Fragment\nimport com.example.todoapp.R\n\nclass AddFragment : Fragment() {\n    override fun onCreateView(\n        inflater: LayoutInflater, container: ViewGroup?,\n        savedInstanceState: Bundle?\n    ): View? {\n        //Set menu\n        setHasOptionsMenu(true)\n        // Inflate the layout for this fragment\n        return inflater.inflate(R.layout.fragment_add, container, false)\n    }\n\n    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {\n        inflater.inflate(R.menu.add_fragment_menu,menu)\n    }\n\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/todoapp/fragments/add/AddFragment.kt b/app/src/main/java/com/example/todoapp/fragments/add/AddFragment.kt
+--- a/app/src/main/java/com/example/todoapp/fragments/add/AddFragment.kt	(revision 868c82021c2a817ddc5c523c8ede1eba61c8a8f4)
++++ b/app/src/main/java/com/example/todoapp/fragments/add/AddFragment.kt	(date 1670751769407)
+@@ -19,5 +19,4 @@
+     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+         inflater.inflate(R.menu.add_fragment_menu,menu)
+     }
+-
+ }
+\ No newline at end of file
