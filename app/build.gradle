@@ -3,6 +3,7 @@
 //apply plugin: "kotlin-kapt"
 //apply plugin: "androidx.navigation.safeargs.kotlin"
 //apply plugin: "kotlin-parcelize"
+
 plugins {
     id('com.android.application')
     id('kotlin-android')
