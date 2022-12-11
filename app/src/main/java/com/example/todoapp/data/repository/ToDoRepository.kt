@@ -11,4 +11,8 @@ class ToDoRepository(private val toDoDataAccessObjects: ToDoDataAccessObjects) {
     suspend fun insertData(toDoData: ToDoData) {
         toDoDataAccessObjects.insertData(toDoData)
     }
+
+    suspend fun updateData(toDoData: ToDoData) {
+        toDoDataAccessObjects.updateData(toDoData)
+    }
 }

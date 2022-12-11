@@ -43,11 +43,8 @@ class ListFragment : Fragment() {
             findNavController().navigate(R.id.action_listFragment_to_addFragment)
         }
 
-        val list = binding.listLayout
-        list.setOnClickListener{
-            findNavController().navigate(R.id.action_listFragment_to_updateFragment)
-        }
-//test
+
+
         setHasOptionsMenu(true)
         return binding.root
     }
