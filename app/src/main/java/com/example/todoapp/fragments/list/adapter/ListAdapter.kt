@@ -1,4 +1,4 @@
-package com.example.todoapp.fragments.list
+package com.example.todoapp.fragments.list.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -9,6 +9,7 @@ import com.example.todoapp.R
 import com.example.todoapp.data.models.Priority
 import com.example.todoapp.data.models.ToDoData
 import com.example.todoapp.databinding.RowLayoutBinding
+import com.example.todoapp.fragments.list.ListFragmentDirections
 
 class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
 
@@ -27,7 +28,8 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
         holder.binding.titleTxt.text = dataList[position].title
         holder.binding.descriptionTxt.text = dataList[position].description
         holder.binding.rowBackground.setOnClickListener{
-            val action = ListFragmentDirections.actionListFragmentToUpdateFragment(dataList[position])
+            val action =
+                ListFragmentDirections.actionListFragmentToUpdateFragment(dataList[position])
             holder.itemView.findNavController().navigate(action)
         }
 
