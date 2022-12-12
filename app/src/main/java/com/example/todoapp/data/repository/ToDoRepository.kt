@@ -7,6 +7,8 @@ import com.example.todoapp.data.models.ToDoData
 class ToDoRepository(private val toDoDataAccessObjects: ToDoDataAccessObjects) {
 
     val getAllData: LiveData<List<ToDoData>> = toDoDataAccessObjects.getAllData()
+    val sortByHighPriority: LiveData<List<ToDoData>> = toDoDataAccessObjects.sortByHighPriority()
+    val sortByLowPriority: LiveData<List<ToDoData>> = toDoDataAccessObjects.sortByLowPriority()
 
     suspend fun insertData(toDoData: ToDoData) {
         toDoDataAccessObjects.insertData(toDoData)
@@ -22,5 +24,9 @@ class ToDoRepository(private val toDoDataAccessObjects: ToDoDataAccessObjects) {
 
     suspend fun deleteAll(){
         toDoDataAccessObjects.deleteAll()
+    }
+
+    fun searchDatabase(searchQuery: String): LiveData<List<ToDoData>> {
+        return toDoDataAccessObjects.searchDatabase(searchQuery)
     }
 }

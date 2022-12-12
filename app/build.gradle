@@ -76,6 +76,9 @@ dependencies {
     implementation "androidx.room:room-ktx:2.4.3"
     androidTestImplementation "androidx.room:room-testing:2.4.3"
 
+    // Kotlin
+    implementation 'jp.wasabeef:recyclerview-animators:4.0.2'
+
     // Lifecycle components
 //    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
 //    implementation "androidx.lifecycle:lifecycle-common-java8:2.5.1"
